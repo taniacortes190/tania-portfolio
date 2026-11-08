@@ -754,21 +754,11 @@ html { overflow-x: clip; }
 }
 .hero__lockup .hero__title { display: grid; justify-items: start; margin: 0; }
 
-/* "Hi," en la cursiva de acento, grande, inclinada y montada sobre el nombre */
-.hero__hi {
-  position: relative; z-index: 3;
-  font-family: var(--serif); font-style: italic; font-weight: 500;
-  font-size: clamp(76px, 12.5vw, 220px); line-height: .8; letter-spacing: -0.02em;
-  color: var(--ink);
-  margin: 0 0 -0.32em -0.06em;
-  transform: rotate(-7deg); transform-origin: left bottom;
-}
-
 /* "I'm Tania" en la principal, con el degradado animado de siempre, desplazado a la derecha */
 .hero__lockup .hero__hola {
   font-size: clamp(44px, 11vw, 196px);
   line-height: .9;
-  margin-left: clamp(28px, 9vw, 170px);
+  margin-left: 0;
 }
 
 /* "Dirección visual" alineado al final del nombre, arriba a la derecha */
@@ -778,23 +768,14 @@ html { overflow-x: clip; }
 }
 
 @media (max-width: 600px) {
-  .hero__lockup .hero__hola { margin-left: 18px; }
-  .hero__hi { margin-bottom: -0.26em; }
 }
 
-/* ajustes de la composición Hi, / I'm Tania */
-.hero__hi { margin-bottom: -0.2em; }
+/* ajustes de la composición I'm Tania */
 .hero__lockup .hero__hola {
   font-size: clamp(54px, 12.6vw, 210px);
-  margin-left: clamp(34px, 11vw, 200px);
 }
-.hero__lockup .hero__subtitle { margin-bottom: 0; transform: translateY(clamp(18px, 3vw, 46px)); }
+.hero__lockup .hero__subtitle { margin-bottom: 6px; }
 .shape--star { top: 9%; }
 @media (max-width: 600px) {
-  .hero__lockup .hero__hola { margin-left: 22px; }
   .hero__lockup .hero__subtitle { transform: none; margin-bottom: 6px; }
-  .hero__hi { font-size: 84px; margin-bottom: -0.18em; }
-}
-@media (max-width: 600px) {
-  .hero__hi { margin-bottom: -0.06em; }
 }
