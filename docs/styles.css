@@ -152,7 +152,6 @@ body.menu-open .nav { color: var(--white); background: transparent; backdrop-fil
   width: clamp(120px, 16vw, 230px); aspect-ratio: 1; border-radius: 50%;
   background: var(--canta); right: -4%; top: 48%;
 }
-.shape--diamond { width: 18px; height: 18px; background: var(--ink); left: 22%; top: 24%; transform: rotate(45deg); }
 .shape--star { color: var(--white); font-size: clamp(36px, 4vw, 60px); right: 18%; top: 20%; }
 .shape--blob {
   width: clamp(90px, 10vw, 150px); aspect-ratio: 1; background: var(--lemon);
@@ -552,7 +551,6 @@ main, body > section { isolation: isolate; }
   white-space: nowrap;
 }
 
-.shape--diamond { left: 9%; top: 20%; }
 
 /* evita que el degradado recorte la parte alta de la O */
 .hero__hola { padding: .12em .05em .08em; margin-top: -.12em; }
