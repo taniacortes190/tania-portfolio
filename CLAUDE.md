@@ -35,4 +35,4 @@ Never commit or push directly to `main`.
 3. Push the branch and open a pull request.
 4. Merge the PR into `main` only when Tania says so.
 
-The GitHub CLI (`gh`) isn't installed; use the GitHub MCP tools to create and merge PRs (repo `taniacortes190/tania-portfolio`).
+Use the GitHub CLI (`gh`, installed with Homebrew and signed in as `taniacortes190`) to create and merge PRs in `taniacortes190/tania-portfolio`. PRs created with `gh pr create` are linked to the Claude session automatically; ones opened another way don't show up there.
