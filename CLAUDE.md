@@ -30,7 +30,7 @@ The loose `*.jpg` and `FireShot Capture *.png` files in the repo root are refere
 
 Never commit or push directly to `main`.
 
-1. Create a branch for the change.
+1. Create a branch for the change with `git checkout -b <name>` in this folder. Don't create worktrees or copy the project into new folders.
 2. Commit on that branch.
 3. Push the branch and open a pull request.
 4. Merge the PR into `main` only when Tania says so.
