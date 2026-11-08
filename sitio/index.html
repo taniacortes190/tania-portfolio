@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tania Cortés · Diseño gráfico y dirección creativa</title>
+  <meta name="description" content="Portafolio de Tania Cortés: directora de arte y diseñadora gráfica especializada en branding, ilustración y motion graphics. CDMX.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300..800&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <a href="#inicio" class="nav__logo">Tania<span class="nav__dot">✦</span></a>
+    <nav class="nav__links">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#sobre-mi">Sobre mí</a>
+    </nav>
+    <a href="mailto:taniacortes190@gmail.com" class="btn btn--lime nav__cta">Hablemos ↗</a>
+    <button class="nav__burger" aria-label="Abrir menú"><span></span><span></span></button>
+  </header>
+
+  <div class="menu" aria-hidden="true">
+    <a href="#proyectos">Proyectos</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#sobre-mi">Sobre <em>mí</em></a>
+    <a href="#contacto">Contacto</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <!-- Filtro de "brisa": ondula suavemente la ilustración -->
+    <svg class="sr-only" aria-hidden="true" focusable="false">
+      <filter id="brisa" x="-5%" y="-5%" width="110%" height="110%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.006 0.012" numOctaves="2" seed="4" result="ruido">
+          <animate attributeName="baseFrequency" dur="14s" repeatCount="indefinite"
+                   values="0.006 0.012; 0.008 0.016; 0.006 0.012"/>
+        </feTurbulence>
+        <feDisplacementMap in="SourceGraphic" in2="ruido" scale="10" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </svg>
+    <div class="hero__scene" aria-hidden="true"><div class="hero__scene-img"></div></div>
+    <canvas class="hero__wind" aria-hidden="true"></canvas>
+    <div class="hero__shapes" aria-hidden="true">
+      <span class="shape shape--half"></span>
+      <span class="shape shape--flower">✿</span>
+      <span class="shape shape--circle"></span>
+      <span class="shape shape--diamond"></span>
+      <span class="shape shape--star">✦</span>
+      <span class="shape shape--blob"></span>
+    </div>
+
+    <p class="hero__kicker">Diseño gráfico &amp; dirección creativa · CDMX</p>
+    <div class="hero__lockup">
+      <p class="hero__subtitle">Dirección visual</p>
+      <h1 class="hero__title">
+        <span class="hero__hi">Hi,</span>
+        <span class="hero__hola">I’m Tania</span>
+      </h1>
+    </div>
+    <p class="hero__lead">
+      Soy <strong>Tania</strong>, directora de arte y diseñadora gráfica.
+      Creo <em>marcas con carácter</em>, ilustración y contenido que se mueve.
+    </p>
+    <a href="#proyectos" class="hero__scroll" aria-label="Ver proyectos">
+      <span>Ver trabajo</span>
+      <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 4v16m0 0-6-6m6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section class="work" id="proyectos">
+    <div class="section-head">
+      <p class="eyebrow">Proyectos seleccionados</p>
+      <h2 class="section-title">Trabajo <em>reciente</em></h2>
+    </div>
+
+    <div class="work__grid">
+      <article class="card card--tall" data-project="gud">
+        <img src="img/gud-drink.jpg" alt="Bebida GÜD con stickers de la marca">
+        <div class="card__info">
+          <h3>GÜD <em>bebida vegetal</em></h3>
+          <span class="pill pill--lime">Dirección de arte · Ilustración · Motion</span>
+        </div>
+        <span class="card__arrow">↗</span>
+      </article>
+
+      <article class="card card--offset" data-project="smirnoff">
+        <img src="img/smirnoff-main.jpg" alt="Ilustración El Diablito para Smirnoff">
+        <div class="card__info">
+          <h3>Smirnoff <em>El Diablito</em></h3>
+          <span class="pill pill--pink">Ilustración · Packaging</span>
+        </div>
+        <span class="card__arrow">↗</span>
+      </article>
+
+      <article class="card card--wide" data-project="nodo">
+        <img src="img/nodo-frutero.jpg" alt="Ilustración de frutero para Nodo">
+        <div class="card__info">
+          <h3>Nodo <em>punto de conexión</em></h3>
+          <span class="pill pill--white">Identidad · Póster · Ilustración</span>
+        </div>
+        <span class="card__arrow">↗</span>
+      </article>
+
+      <article class="card card--full" data-project="loteria">
+        <img src="img/gud-loteria.jpg" alt="Lotería GÜD Sabores de México">
+        <div class="card__info">
+          <h3>Lotería GÜD <em>sabores de México</em></h3>
+          <span class="pill pill--lime">Ilustración · Merchandising</span>
+        </div>
+        <span class="card__arrow">↗</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="services" id="servicios">
+    <p class="eyebrow eyebrow--light">Servicios</p>
+    <ul class="services__list">
+      <li><span>Branding</span><i class="ico ico--flower">✿</i></li>
+      <li><span>Dirección de arte</span><i class="ico ico--leaf"></i></li>
+      <li><span>Ilustración</span><i class="ico ico--star">✦</i></li>
+      <li><span>Motion graphics</span><i class="ico ico--dot"></i></li>
+      <li><span>Contenido digital</span><i class="ico ico--flower">✿</i></li>
+    </ul>
+    <div class="services__detail">
+      <div>
+        <h4>Branding</h4>
+        <p>Identidad de marca, manuales de marca y merchandising.</p>
+      </div>
+      <div>
+        <h4>Ilustración</h4>
+        <p>Diseño original de personajes, empaques y piezas editoriales.</p>
+      </div>
+      <div>
+        <h4>Motion</h4>
+        <p>Animación para redes, campañas y lanzamientos de producto.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section class="about" id="sobre-mi">
+    <h2 class="section-title section-title--center">Más <em>sobre mí</em></h2>
+    <p class="about__intro">
+      Soy <strong>directora de arte y diseñadora gráfica</strong>, especializada en
+      <strong>branding, motion graphics e ilustración</strong> ✦
+      Mi trabajo combina pensamiento estratégico y sensibilidad visual para crear identidades,
+      contenido digital y sistemas gráficos que fortalecen la comunicación de las marcas.
+    </p>
+
+    <div class="about__grid">
+      <div class="about__photo">
+        <span class="about__burst" aria-hidden="true"></span>
+        <div class="about__frame"><img src="img/retrato.jpg" alt="Retrato de Tania"></div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline__row timeline__row--head">
+          <span>Tiempo</span><span>Rol</span><span>Empresa</span>
+        </div>
+        <div class="timeline__row">
+          <span class="t-time">2 años</span>
+          <span class="t-role">Animadora &amp; diseñadora<small>Jr.</small></span>
+          <span class="t-co">Pixi · Upsocl</span>
+        </div>
+        <div class="timeline__row">
+          <span class="t-time">4 años</span>
+          <span class="t-role">Diseñadora Sr.<small>Jefa de equipo de diseño</small></span>
+          <span class="t-co">Upsomedia</span>
+        </div>
+        <div class="timeline__row timeline__row--now">
+          <span class="t-time">3 años · Actual</span>
+          <span class="t-role">Directora de arte<small>Diseñadora Sr.</small></span>
+          <span class="t-co">Nueve Agency</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <footer class="contact" id="contacto">
+    <p class="eyebrow eyebrow--light">¿Tienes un proyecto en mente?</p>
+    <a class="contact__big" href="mailto:taniacortes190@gmail.com">
+      Hagamos algo <em>increíble</em> <span class="contact__star">✦</span>
+    </a>
+    <div class="contact__row">
+      <a href="mailto:taniacortes190@gmail.com" class="btn btn--lime">taniacortes190@gmail.com</a>
+      <a href="tel:+525535194674" class="btn btn--ghost">+52 55 3519 4674</a>
+    </div>
+    <div class="contact__foot">
+      <span>© 2026 Tania Cortés</span>
+      <span>Hecho con ✿ en CDMX</span>
+    </div>
+  </footer>
+
+  <!-- PANEL DE PROYECTO -->
+  <div class="panel" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="panel__inner">
+      <button class="panel__close" aria-label="Cerrar">✕</button>
+      <div class="panel__content"></div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

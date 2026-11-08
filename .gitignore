@@ -1,0 +1,11 @@
+# Reference material (not part of the site)
+FireShot Capture *.png
+/*.jpg
+
+# Local Claude / MCP config
+.claude/
+.mcp.json
+
+# System files
+.DS_Store
+node_modules/
