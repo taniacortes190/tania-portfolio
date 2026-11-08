@@ -1,6 +1,7 @@
 :root {
   /* Paleta de Tania */
   --peri: #afc5ff;      /* Periwinkle */
+  --peri-deep: #6a5fd8; /* Periwinkle oscuro (texto sobre fondos claros) */
   --lemon: #fcff82;     /* Lemon */
   --canta: #ff9c6d;     /* Cantaloupe */
   --melon: #fd5959;     /* Watermelon */
@@ -386,7 +387,7 @@ body.no-scroll { overflow: hidden; }
 
 /* ---------- Ajustes de la nueva paleta ---------- */
 .section-head .eyebrow { color: var(--melon); }
-.section-title em { color: var(--melon); }
+.section-title em { color: var(--peri-deep); }
 .card { background: var(--peri); }
 .card:hover .card__arrow { background: var(--lemon); border-color: var(--lemon); }
 .services__list li.is-active { color: var(--lemon); }
