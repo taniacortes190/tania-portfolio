@@ -783,3 +783,31 @@ html { overflow-x: clip; }
 @media (max-width: 600px) {
   .hero__lockup .hero__subtitle { transform: none; margin-bottom: 6px; }
 }
+
+/* ---------- Titular "PORT / folio": composición escalonada con etiquetas ---------- */
+/* todo se mide en em sobre el tamaño del bloque, así escala igual en móvil y escritorio */
+.hero__lockup--port {
+  font-size: clamp(48px, 13vw, 220px);
+  padding: 0 .1em .2em 0;
+}
+.hero__lockup--port .hero__title { display: block; text-align: left; }
+.hero__lockup--port .hero__hola { font-size: 1em; line-height: .9; }
+.hero__folio {
+  display: inline-block; position: relative;   /* inline-block: su ancho cuenta para centrar el bloque */
+  margin: -.3em 0 0 .8em; padding-right: .08em; /* espacio para la "o" en cursiva */
+  font-family: var(--serif); font-style: italic; font-weight: 500;
+  font-size: 1.15em; line-height: .9; letter-spacing: -0.01em;
+  color: var(--peri-deep);
+}
+.hero__tags { list-style: none; margin: 0; padding: 0; }
+.hero__tag {
+  position: absolute; z-index: 3;
+  font-size: clamp(11px, 1.15vw, 17px); font-weight: 600; letter-spacing: .02em;
+  padding: .45em 1.1em; border: 1.5px solid var(--ink); border-radius: 999px;
+  color: var(--ink); background: rgba(255, 248, 238, .4);
+  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+  white-space: nowrap;
+}
+.hero__tag--a { right: 0; top: -4%; }       /* arriba a la derecha de PORT */
+.hero__tag--b { left: 0; top: 64%; }        /* a la izquierda, bajo PORT */
+.hero__tag--c { left: 46%; bottom: -2%; }   /* debajo de folio */
