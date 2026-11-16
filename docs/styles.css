@@ -826,7 +826,7 @@ html { overflow-x: clip; }
   letter-spacing: .32em; text-transform: uppercase; text-align: left; color: var(--ink);
 }
 .hero__role span { white-space: nowrap; }
-.hero__role-dd { display: flex; align-items: center; gap: .35em; margin-top: .3em; }
+.hero__role-dd { display: flex; align-items: center; gap: .35em; margin-top: 1em; }  /* aire entre "creative director" y "digital designer" */
 .hero__role-amp {
   font-family: var(--serif); font-style: italic; font-weight: 400;
   font-size: 2.4em; line-height: 1; letter-spacing: 0; text-transform: none; margin-top: .08em;
