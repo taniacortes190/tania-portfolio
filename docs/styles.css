@@ -818,8 +818,7 @@ html { overflow-x: clip; }
 .hero__tag--b { left: 0; top: 64%; }        /* a la izquierda, bajo PORT */
 .hero__tag--c { left: 46%; bottom: -2%; }   /* debajo de folio */
 
-/* "creative director & digital designer" a la derecha de Port: cuatro líneas alineadas
-   a la izquierda, todas iguales (Sora en mayúsculas espaciadas, color tinta) */
+/* "2027" a la derecha de Port, bajo la etiqueta Ilustración (Sora espaciada, color tinta) */
 .hero__role {
   position: absolute; z-index: 3; left: 70.5%; top: 16%; margin: 0;
   display: grid; justify-items: start;
