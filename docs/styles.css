@@ -803,10 +803,10 @@ html { overflow-x: clip; }
   padding: .12em .14em .1em .05em;   /* aire para que el degradado no corte la cursiva */
 }
 
-/* "2027" a la derecha de Port: fino y muy espaciado, en Watermelon de la paleta */
+/* "2027" a la derecha de Port: fino y muy espaciado, en color tinta */
 .hero__year {
   position: absolute; z-index: 3; left: 71%; top: 23%; margin: 0;
   font-size: clamp(11px, 1.9vw, 28px); font-weight: 400; line-height: 1;
-  letter-spacing: .85em; color: var(--melon);
+  letter-spacing: .85em; color: var(--ink);
   white-space: nowrap;
 }
