@@ -760,7 +760,7 @@ html { overflow-x: clip; }
   margin-left: 0;
 }
 
-/* "Dirección visual" alineado al final del nombre, arriba a la derecha */
+/* "Dirección de arte" alineado al final del título, arriba a la derecha */
 .hero__lockup .hero__subtitle {
   justify-self: end; margin: 0 0 calc(-1 * clamp(4px, 1vw, 14px));
   padding-right: .3em;
