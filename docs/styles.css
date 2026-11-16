@@ -802,3 +802,11 @@ html { overflow-x: clip; }
   margin: -.5em 0 0 1.05em;   /* las astas de la f y la l se montan sobre la base de Port */
   padding: .12em .14em .1em .05em;   /* aire para que el degradado no corte la cursiva */
 }
+
+/* "2027" a la derecha de Port: fino y muy espaciado, en un sandía oscuro de la paleta */
+.hero__year {
+  position: absolute; z-index: 3; left: 71%; top: 21%; margin: 0;
+  font-size: clamp(15px, 3vw, 44px); font-weight: 400; line-height: 1;
+  letter-spacing: .85em; color: color-mix(in srgb, var(--melon) 72%, var(--ink));
+  white-space: nowrap;
+}
