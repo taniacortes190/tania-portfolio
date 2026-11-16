@@ -817,3 +817,10 @@ html { overflow-x: clip; }
 .hero__tag--a { right: 0; top: -4%; }       /* arriba a la derecha de PORT */
 .hero__tag--b { left: 0; top: 64%; }        /* a la izquierda, bajo PORT */
 .hero__tag--c { left: 46%; bottom: -2%; }   /* debajo de folio */
+
+/* "creative director & digital designer" a la derecha de Port, bajo la etiqueta Ilustración */
+.hero__role {
+  position: absolute; z-index: 3; left: 71%; top: 21%; margin: 0;
+  font-size: clamp(11px, 1.9vw, 24px); font-weight: 600; line-height: 1.15;
+  letter-spacing: .01em; text-align: left; color: var(--ink);
+}
