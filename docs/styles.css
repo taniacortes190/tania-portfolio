@@ -827,9 +827,6 @@ html { overflow-x: clip; }
   letter-spacing: .32em; text-transform: uppercase; text-align: left; color: var(--ink);
 }
 .hero__role span { white-space: nowrap; }
-/* el & grande ocupa el alto de "digital / designer", pegado a su izquierda */
-.hero__role-dd { display: flex; align-items: center; gap: .35em; margin-top: .3em; }
-.hero__role-amp { font-family: var(--serif); font-style: italic; font-weight: 400; font-size: 2.4em; line-height: 1; letter-spacing: 0; text-transform: none; margin-top: .08em; }  /* & en Playfair cursiva, más delgado */
 @media (max-width: 600px) {
   .hero__tag--a { top: -16%; }   /* en móvil sube para dejar aire al texto del rol */
 }
