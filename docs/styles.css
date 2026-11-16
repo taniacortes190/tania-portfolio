@@ -818,9 +818,31 @@ html { overflow-x: clip; }
 .hero__tag--b { left: 0; top: 64%; }        /* a la izquierda, bajo PORT */
 .hero__tag--c { left: 46%; bottom: -2%; }   /* debajo de folio */
 
-/* "creative director & digital designer" a la derecha de Port, bajo la etiqueta Ilustración */
+/* "creative director & digital designer" a la derecha de Port: composición tipográfica
+   que mezcla Sora (versalitas espaciadas y negrita) con Playfair cursiva, escalonada */
 .hero__role {
-  position: absolute; z-index: 3; left: 71%; top: 21%; margin: 0;
-  font-size: clamp(11px, 1.9vw, 24px); font-weight: 600; line-height: 1.15;
-  letter-spacing: .01em; text-align: left; color: var(--ink);
+  position: absolute; z-index: 3; left: 70.5%; top: 14%; margin: 0;
+  display: grid; justify-items: start;
+  font-size: clamp(12px, 3vw, 40px); line-height: .95; text-align: left; color: var(--ink);
+}
+.hero__role > span { display: block; white-space: nowrap; }
+.hero__role-1 {                      /* CREATIVE: pequeña, espaciada */
+  font-size: .62em; font-weight: 700; letter-spacing: .32em; text-transform: uppercase;
+  margin-bottom: .25em;
+}
+.hero__role-2 {                      /* director: negrita grande */
+  font-size: 1.35em; font-weight: 800; letter-spacing: -0.035em;
+}
+.hero__role-3 {                      /* & digital: cursiva morada, sangrada */
+  font-family: var(--serif); font-style: italic; font-weight: 500;
+  font-size: 1.3em; letter-spacing: -0.01em; color: var(--peri-deep);
+  margin: .02em 0 0 .7em;
+}
+.hero__role-3 em { font-style: italic; font-size: 1.25em; color: var(--melon); margin-right: .05em; }
+.hero__role-4 {                      /* DESIGNER: espaciada, alineada con la sangría */
+  font-size: .62em; font-weight: 700; letter-spacing: .32em; text-transform: uppercase;
+  margin: .45em 0 0 1.15em;
+}
+@media (max-width: 600px) {
+  .hero__tag--a { top: -16%; }   /* en móvil sube para dejar aire al texto del rol */
 }
