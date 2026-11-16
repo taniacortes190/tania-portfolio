@@ -830,4 +830,5 @@ html { overflow-x: clip; }
 .hero__role-amp {
   font-family: var(--serif); font-style: italic; font-weight: 400;
   font-size: 2.4em; line-height: 1; letter-spacing: 0; text-transform: none; margin-top: .08em;
+  visibility: hidden;   /* el & no se ve, pero conserva su hueco: digital / designer no se mueven */
 }
