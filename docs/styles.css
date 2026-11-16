@@ -799,6 +799,6 @@ html { overflow-x: clip; }
   font-family: var(--serif); font-style: italic; font-weight: 700;
   text-transform: none; letter-spacing: -0.02em;
   font-size: 1.12em; line-height: .9;
-  margin: -.18em 0 0 1.05em;
+  margin: -.5em 0 0 1.05em;   /* las astas de la f y la l se montan sobre la base de Port */
   padding: .12em .14em .1em .05em;   /* aire para que el degradado no corte la cursiva */
 }
