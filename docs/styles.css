@@ -818,14 +818,13 @@ html { overflow-x: clip; }
 .hero__tag--b { left: 0; top: 64%; }        /* a la izquierda, bajo PORT */
 .hero__tag--c { left: 46%; bottom: -2%; }   /* debajo de folio */
 
-/* "2027" a la derecha de Port, bajo la etiqueta Ilustración (Sora espaciada, color tinta) */
+/* "2027" a la derecha de Port, bajo la etiqueta Ilustración (Sora negrita, color tinta) */
 .hero__role {
   position: absolute; z-index: 3; left: 70.5%; top: 16%; margin: 0;
   display: grid; justify-items: start;
-  font-size: clamp(10px, 1.75vw, 23px); font-weight: 700; line-height: 1.15;
-  letter-spacing: .32em; text-transform: uppercase; text-align: left; color: var(--ink);
+  font-size: clamp(18px, 4vw, 58px); font-weight: 700; line-height: 1;
+  letter-spacing: .02em; text-align: left; color: var(--ink); white-space: nowrap;
 }
-.hero__role span { white-space: nowrap; }
 @media (max-width: 600px) {
   .hero__tag--a { top: -16%; }   /* en móvil sube para dejar aire al texto del rol */
 }
