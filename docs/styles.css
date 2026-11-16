@@ -784,7 +784,7 @@ html { overflow-x: clip; }
   .hero__lockup .hero__subtitle { transform: none; margin-bottom: 6px; }
 }
 
-/* ---------- Titular "PORT / folio": composición escalonada con etiquetas ---------- */
+/* ---------- Titular "Port / folio": composición escalonada ---------- */
 /* todo se mide en em sobre el tamaño del bloque, así escala igual en móvil y escritorio */
 .hero__lockup--port {
   font-size: clamp(40px, 10.8vw, 184px);
@@ -805,16 +805,6 @@ html { overflow-x: clip; }
   margin: -.42em 0 0 .9em;   /* desplazada a la derecha: se lee primero Port y luego folio */
   padding: .12em .14em .1em .05em;   /* aire para que el degradado no corte la cursiva */
 }
-.hero__tags { list-style: none; margin: 0; padding: 0; }
-.hero__tag {
-  position: absolute; z-index: 3;
-  font-size: clamp(11px, 1.15vw, 17px); font-weight: 600; letter-spacing: .02em;
-  padding: .45em 1.1em; border: 1.5px solid var(--ink); border-radius: 999px;
-  color: var(--ink); background: rgba(255, 248, 238, .4);
-  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
-  white-space: nowrap;
-}
-.hero__tag--b { left: 0; top: 64%; }        /* a la izquierda, bajo PORT */
 
 /* "creative director & digital designer" a la derecha de Port: alineado a la izquierda,
    Sora en mayúsculas espaciadas color tinta; el & en Playfair cursiva ocupa el alto de
