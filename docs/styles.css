@@ -810,3 +810,11 @@ html { overflow-x: clip; }
   letter-spacing: .85em; color: var(--ink);
   white-space: nowrap;
 }
+
+/* "TANIA CORTÉS" a la izquierda de folio, a la altura de su ojo medio; mismo sistema que 2027 */
+.hero__name {
+  position: absolute; z-index: 3; right: 69.5%; top: 72%; margin: 0;
+  font-size: clamp(10px, 1.45vw, 21px); font-weight: 400; line-height: 1;
+  letter-spacing: .22em; text-transform: uppercase; color: var(--ink);
+  white-space: nowrap;
+}
