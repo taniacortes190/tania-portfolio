@@ -787,17 +787,20 @@ html { overflow-x: clip; }
 /* ---------- Titular "PORT / folio": composición escalonada con etiquetas ---------- */
 /* todo se mide en em sobre el tamaño del bloque, así escala igual en móvil y escritorio */
 .hero__lockup--port {
-  font-size: clamp(48px, 13vw, 220px);
+  font-size: clamp(44px, 12vw, 200px);
   padding: 0 .1em .2em 0;
 }
 .hero__lockup--port .hero__title { display: block; text-align: left; }
 .hero__lockup--port .hero__hola { font-size: 1em; line-height: .9; }
-.hero__folio {
-  display: inline-block; position: relative;   /* inline-block: su ancho cuenta para centrar el bloque */
-  margin: -.3em 0 0 .8em; padding-right: .08em; /* espacio para la "o" en cursiva */
-  font-family: var(--serif); font-style: italic; font-weight: 500;
-  font-size: 1.15em; line-height: .9; letter-spacing: -0.01em;
-  color: var(--peri-deep);
+.hero__lockup--port .hero__folio {
+  /* mismo degradado animado y sombra que PORT (hereda .hero__hola); solo cambia la letra */
+  display: inline-block; position: relative;
+  font-family: var(--serif); font-style: italic; font-weight: 700;
+  text-transform: none; letter-spacing: -0.02em;
+  font-size: 1.3em; line-height: .8;
+  /* montada sobre PORT: las astas de la f y la l suben entre las letras */
+  margin: -.52em 0 0 .62em;
+  padding: .12em .14em .1em .05em;   /* aire para que el degradado no corte la cursiva */
 }
 .hero__tags { list-style: none; margin: 0; padding: 0; }
 .hero__tag {
