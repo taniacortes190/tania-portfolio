@@ -787,12 +787,13 @@ html { overflow-x: clip; }
 /* ---------- Titular "PORT / folio": composición escalonada con etiquetas ---------- */
 /* todo se mide en em sobre el tamaño del bloque, así escala igual en móvil y escritorio */
 .hero__lockup--port {
-  font-size: clamp(44px, 12vw, 200px);
+  font-size: clamp(40px, 10.8vw, 184px);
   padding: 0 .1em .2em 0;
 }
 .hero__lockup--port .hero__title { display: block; text-align: left; }
 .hero__lockup--port .hero__hola { font-size: 1.22em; line-height: .9; text-transform: none; letter-spacing: -0.015em; }  /* "Port": solo la P en mayúscula */
-/* interletrado óptico: la r y la t de Sora se tocan, se separan solo ellas */
+/* interletrado óptico de "Port": la o y la r se juntan, la r y la t (que se tocaban) se separan */
+.hero__kern-o { margin-right: -.035em; }
 .hero__kern-r { margin-right: .035em; }
 .hero__lockup--port .hero__folio {
   /* mismo degradado animado y sombra que PORT (hereda .hero__hola); solo cambia la letra */
@@ -801,7 +802,7 @@ html { overflow-x: clip; }
   text-transform: none; letter-spacing: -0.02em;
   font-size: 1.3em; line-height: .8;  /* relativo al bloque, igual que Port (1.22em) */
   /* montada sobre PORT: las astas de la f y la l suben entre las letras */
-  margin: -.42em 0 0 .62em;
+  margin: -.42em 0 0 .9em;   /* desplazada a la derecha: se lee primero Port y luego folio */
   padding: .12em .14em .1em .05em;   /* aire para que el degradado no corte la cursiva */
 }
 .hero__tags { list-style: none; margin: 0; padding: 0; }
