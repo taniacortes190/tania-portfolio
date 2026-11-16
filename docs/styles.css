@@ -791,15 +791,17 @@ html { overflow-x: clip; }
   padding: 0 .1em .2em 0;
 }
 .hero__lockup--port .hero__title { display: block; text-align: left; }
-.hero__lockup--port .hero__hola { font-size: 1.22em; line-height: .9; text-transform: none; }  /* "Port": solo la P en mayúscula */
+.hero__lockup--port .hero__hola { font-size: 1.22em; line-height: .9; text-transform: none; letter-spacing: -0.015em; }  /* "Port": solo la P en mayúscula */
+/* interletrado óptico: la r y la t de Sora se tocan, se separan solo ellas */
+.hero__kern-r { margin-right: .035em; }
 .hero__lockup--port .hero__folio {
   /* mismo degradado animado y sombra que PORT (hereda .hero__hola); solo cambia la letra */
-  display: inline-block; position: relative;
+  display: block; width: fit-content; position: relative;  /* bloque: así el margen negativo sí la sube sobre Port */
   font-family: var(--serif); font-style: italic; font-weight: 700;
   text-transform: none; letter-spacing: -0.02em;
   font-size: 1.3em; line-height: .8;  /* relativo al bloque, igual que Port (1.22em) */
   /* montada sobre PORT: las astas de la f y la l suben entre las letras */
-  margin: -.52em 0 0 .62em;
+  margin: -.42em 0 0 .62em;
   padding: .12em .14em .1em .05em;   /* aire para que el degradado no corte la cursiva */
 }
 .hero__tags { list-style: none; margin: 0; padding: 0; }
