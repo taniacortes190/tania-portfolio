@@ -783,3 +783,42 @@ html { overflow-x: clip; }
 @media (max-width: 600px) {
   .hero__lockup .hero__subtitle { transform: none; margin-bottom: 6px; }
 }
+
+/* ---------- Titular "Port / folio": composición escalonada ---------- */
+/* todo se mide en em sobre el tamaño del bloque, así escala igual en móvil y escritorio */
+.hero__lockup--port {
+  font-size: clamp(40px, 10.8vw, 184px);
+  padding: 0 .1em .2em 0;
+}
+.hero__lockup--port .hero__title { display: block; text-align: left; }
+.hero__lockup--port .hero__hola { font-size: 1.22em; line-height: .9; text-transform: none; letter-spacing: -0.015em; }  /* "Port": solo la P en mayúscula */
+/* interletrado óptico de "Port": la o y la r se juntan, la r y la t (que se tocaban) se separan */
+.hero__kern-o { margin-right: -.035em; }
+.hero__kern-r { margin-right: .035em; }
+.hero__lockup--port .hero__folio {
+  /* mismo degradado animado y sombra que PORT (hereda .hero__hola); solo cambia la letra */
+  display: block; width: fit-content; position: relative;  /* bloque: así el margen negativo sí la sube sobre Port */
+  font-family: var(--serif); font-style: italic; font-weight: 700;
+  text-transform: none; letter-spacing: -0.02em;
+  font-size: 1.3em; line-height: .8;  /* relativo al bloque, igual que Port (1.22em) */
+  /* montada sobre PORT: las astas de la f y la l suben entre las letras */
+  margin: -.42em 0 0 .9em;   /* desplazada a la derecha: se lee primero Port y luego folio */
+  padding: .12em .14em .1em .05em;   /* aire para que el degradado no corte la cursiva */
+}
+
+/* "creative director & digital designer" a la derecha de Port: alineado a la izquierda,
+   Sora en mayúsculas espaciadas color tinta; el & en Playfair cursiva ocupa el alto de
+   "digital / designer", pegado a su izquierda */
+.hero__role {
+  position: absolute; z-index: 3; left: 71%; top: 15%; margin: 0;
+  display: grid; justify-items: start;
+  font-size: clamp(10px, 1.75vw, 23px); font-weight: 700; line-height: 1.15;
+  letter-spacing: .32em; text-transform: uppercase; text-align: left; color: var(--ink);
+}
+.hero__role span { white-space: nowrap; }
+.hero__role-dd { display: flex; align-items: center; gap: .35em; margin-top: 1em; }  /* aire entre "creative director" y "digital designer" */
+.hero__role-amp {
+  font-family: var(--serif); font-style: italic; font-weight: 400;
+  font-size: 2.4em; line-height: 1; letter-spacing: 0; text-transform: none; margin-top: .08em;
+  visibility: hidden;   /* el & no se ve, pero conserva su hueco: digital / designer no se mueven */
+}
