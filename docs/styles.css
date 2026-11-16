@@ -83,9 +83,14 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; }
   -webkit-backdrop-filter: blur(14px);
   color: var(--ink);
 }
-.nav__logo { font-weight: 800; font-size: 24px; letter-spacing: -0.03em; }
-.nav__dot { color: var(--melon); margin-left: 2px; font-size: .7em; vertical-align: top; }
-.nav.is-scrolled .nav__dot { color: var(--blue); }
+.nav__logo { display: block; line-height: 0; }
+/* logo como máscara: toma el color del texto de la barra (tinta, o blanco con el menú abierto) */
+.nav__logo-img {
+  display: block; height: 26px; aspect-ratio: 1031 / 295;
+  background: currentColor;
+  -webkit-mask: url("img/logo-tania.png") center / contain no-repeat;
+  mask: url("img/logo-tania.png") center / contain no-repeat;
+}
 .nav__links { display: flex; gap: 28px; font-size: 15px; font-weight: 500; }
 .nav__links a { position: relative; }
 .nav__links a::after {
