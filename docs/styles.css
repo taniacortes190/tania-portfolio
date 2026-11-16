@@ -805,20 +805,3 @@ html { overflow-x: clip; }
   margin: -.42em 0 0 .9em;   /* desplazada a la derecha: se lee primero Port y luego folio */
   padding: .12em .14em .1em .05em;   /* aire para que el degradado no corte la cursiva */
 }
-
-/* "creative director & digital designer" a la derecha de Port: alineado a la izquierda,
-   Sora en mayúsculas espaciadas color tinta; el & en Playfair cursiva ocupa el alto de
-   "digital / designer", pegado a su izquierda */
-.hero__role {
-  position: absolute; z-index: 3; left: 71%; top: 15%; margin: 0;
-  display: grid; justify-items: start;
-  font-size: clamp(10px, 1.75vw, 23px); font-weight: 700; line-height: 1.15;
-  letter-spacing: .32em; text-transform: uppercase; text-align: left; color: var(--ink);
-}
-.hero__role span { white-space: nowrap; }
-.hero__role-dd { display: flex; align-items: center; gap: .35em; margin-top: 1em; }  /* aire entre "creative director" y "digital designer" */
-.hero__role-amp {
-  font-family: var(--serif); font-style: italic; font-weight: 400;
-  font-size: 2.4em; line-height: 1; letter-spacing: 0; text-transform: none; margin-top: .08em;
-  visibility: hidden;   /* el & no se ve, pero conserva su hueco: digital / designer no se mueven */
-}
